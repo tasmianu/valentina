@@ -1,0 +1,804 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+ul,li{
+    list-style-type: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Common css part start */
+.title h4{
+    color: #d50a51;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+    width: 180px;
+    padding: 34px 0 44px 58px;
+    position: relative;
+    z-index: 9;
+}
+.title h4 span{
+    font-size: 24px;
+    color: #666;
+    display: block;
+}
+.title h4::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/after2.png);
+    width: 80px;
+    height: 77px;
+    content: "";
+    z-index: -1;
+}
+.title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+}
+.title .snd-p {
+    padding-top: 36px;
+}
+/* Common css part end */
+/* navber part start */
+nav{
+    padding: 37px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+nav .nav-main{
+    display: flex;
+}
+nav .logo{
+    width: 200px;
+}
+nav .menu{
+    width: 750px;
+    text-align: center;
+}
+nav .menu ul{
+    padding-top: 10px;
+}
+nav .menu ul li{
+    display: inline-block;
+    padding: 0 11px;
+}
+nav .menu ul li a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+}
+nav .menu ul li a::after{
+    position: absolute;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/after.png);
+    width: 52px;
+    height: 22px;
+    content: "";
+    transition: all linear .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+nav .menu ul li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+nav .menu ul li a.frist::after{
+    visibility: visible;
+    opacity: 1;
+}
+nav .login{
+    width: 220px;
+    text-align: right;
+}
+nav .login a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: #d50a51;
+    border-radius: 50px;
+    padding: 15px 20px;
+    margin-top: -8px;
+}
+/* navber part end  */
+/* banner part start */
+#banner{
+    background: url(../images/banner-bg.png) no-repeat center;
+    background-size: cover;
+    padding-top: 133px;
+}
+#banner .banner-main{
+    display: flex;
+    justify-content: space-between;
+}
+#banner .image{
+    width: 570px;
+}
+#banner .text{
+    width: 570px;
+    text-align: center;
+    padding-top: 93px;
+}
+#banner .text h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 61px;
+    color: #8a5e3b;
+    text-transform: uppercase;
+}
+#banner .text h1{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #d50a51;
+    margin-top: -37px;
+}
+#banner .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+    padding: 15px 0 65px 0;
+}
+#banner .text a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #d50a51;
+    padding: 14px 18px;
+    border: 1px solid #d50a51;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: all linear .3s;
+}
+#banner .text a:hover{
+    background-color: #d50a51;
+    color: #fff;
+}
+/* banner part end  */
+/* history part start */
+#history {
+    padding-top: 100px;
+}
+#history .about-main {
+    display: flex;
+    justify-content: space-between;
+}
+#history .image{
+    width: 570px;
+}
+#history .text{
+    width: 570px;
+}
+/* history part end */
+/* proposal part start */
+#proposal {
+    padding-top: 100px;
+}
+#proposal .proposal-bg {
+    background: url(../images/gift-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 35px 0 60px 0;
+}
+#proposal .proposal-main {
+    display: flex;
+    justify-content: space-between;
+}
+#proposal .image{
+    width: 500px;
+    position: relative;
+}
+#proposal .text{
+    width: 670px;
+    padding-left: 100px;
+}
+#proposal .same-btn{
+    margin-top: 33px;
+    margin-right: 20px;
+}
+#proposal .title h4 {
+    width: 288px;
+}
+#proposal .image img{
+    position: absolute;
+    bottom: -95px;
+    right: -60px; 
+}
+#proposal .text a{
+    display: inline-block;
+    padding: 14px 20px;
+    border: 1px solid #d50a51;
+    border-radius: 50px;
+    transition: all linear .3s;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d50a51;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 33px;
+    margin-right: 20px;
+}
+#proposal .text a:hover{
+    background-color: #d50a51;
+    color: #fff;
+    border-color: #d50a51;
+}
+/* proposal part end */
+/*  ticket part start */
+#ticket {
+    padding-top: 100px;
+}
+#ticket .main {
+    display: flex;
+    justify-content: space-between;
+}
+#ticket .image{
+    width: 500px;
+    position: relative;
+}
+#ticket .image img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#ticket .text{
+    width: 570px;
+}
+#ticket text .title h4 {
+    width: 270px;
+    margin-right: 52px;
+}
+#ticket .text .title h4 span{
+    padding-left: 80px;
+}
+#ticket .title h4::after{
+   left: 200px;
+    background: url(../images/after1.png);
+    /* top: 8px; */
+}
+#ticket text .title{
+    text-align: right;
+}
+#ticket .text .same-btn {
+    margin-top: 30px;
+    margin-right: 5px;
+}
+#ticket .title h4 {
+    width: 259px;
+}
+#ticket .image img{
+    position: absolute;
+    bottom: -95px;
+    right: -60px; 
+}
+#ticket .text a{
+    display: inline-block;
+    padding: 14px 20px;
+    border: 1px solid #d50a51;
+    border-radius: 50px;
+    transition: all linear .3s;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d50a51;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 33px;
+    margin-right: 20px;
+}
+#ticket .text a:hover{
+    background-color: #d50a51;
+    color: #fff;
+    border-color: #d50a51;
+}
+/*  ticket part end */
+/* service part start */
+#service{
+    margin-top: 100px;
+    background: url(../images/banner-bg.png) no-repeat center;
+    background-size: cover;
+}
+#service .service-main {
+    display: flex;
+    justify-content: space-between;
+}
+#service .text{
+    width: 370px;
+    margin-top: 60px;
+}
+#service .music{
+    width: 370px;
+    margin-top: 78px;
+    padding-left: 34px;
+}
+#service .service-main .music .dinner{
+    padding-top: 75px;
+}
+#service .service-main .music .romantic-music{
+    box-shadow: 10px 10px 30px gray;
+    border-radius: 10px;
+    height: 230px;
+    border-right: 5px solid #d50a51;
+    width: 370px;
+    padding: 20px 18px;
+    padding-bottom: 20px;
+}
+#service .offer{
+    width: 370px;
+    margin-top: 90px;
+    padding-left: 34px;
+}
+#service .offer .free-drinks{
+    padding-top: 110px;
+}
+#service .music .romantic-dinner{
+    padding-top: 28px;
+}
+#service .text .title h4 {
+    width: 317px;
+}
+#proposal .image img{
+    position: absolute;
+    bottom: -95px;
+    right: -60px; 
+}
+#proposal .text a{
+    display: inline-block;
+    padding: 14px 20px;
+    border: 1px solid #d50a51;
+    border-radius: 50px;
+    transition: all linear .3s;
+    font-size: 16px;
+    font-weight: 400;
+    color: #d50a51;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 33px;
+    margin-right: 20px;
+}
+#proposal .text a:hover{
+    background-color: #d50a51;
+    color: #fff;
+    border-color: #d50a51;
+}
+/* service part end */
+/* gallery part start */
+#gallery{
+    padding-top: 100px;
+ }
+ #gallery .gallery-main {
+     display: flex;
+     justify-content: space-between;
+ }
+ #gallery .photos{
+     width: 770px;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+ #gallery .item{
+     width: 370px;
+     margin-bottom: 30px;
+ }
+ #gallery .item .image{
+     position: relative;
+ }
+ #gallery .overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.548);
+     width: 100%;
+     height: 100%;
+     transform: scale(0);
+     transition: all linear .3s;
+ }
+ #gallery .item .image:hover .overlay{
+     transform: scale(1);
+ }
+ #gallery .overlay .all-icon{
+     display: flex;
+     justify-content: right;
+     padding-top: 10px;
+     padding-right: 10px;
+ }
+ #gallery .overlay .icon{
+     width: 50px;
+ }
+ #gallery .overlay .icon i{
+     font-size: 25px;
+     color: #fff;
+     width: 48px;
+     height: 48px;
+     background-color: transparent;
+     border: 1px solid #fff;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 48px;
+     cursor: pointer;
+     transition: all linear .3s;
+     margin: 8px 0;
+ }
+ #gallery .overlay .icon i:hover{
+     background-color: #d50a51;
+     border-color: #d50a51;
+ }
+ #gallery .item .img{
+     display: block;
+ }
+ #gallery .content p{
+     font-size: 20px;
+     font-weight: 600;
+     color: #fff;
+     font-family: "Josefin Sans", sans-serif;
+     padding-bottom: 8px;
+ } 
+ #gallery .content ul li{
+     display: inline-block;
+     margin: 0 4px;
+ }
+ #gallery .content{
+     position: absolute;
+     bottom: 20px;
+     text-align: center;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%;
+ }
+ #gallery .content ul li i{
+     font-size: 12px;
+     color: #fff;
+ }
+ #gallery .content ul li span{
+     font-size: 14px;
+     font-weight: 400;
+     color: #fff;
+     font-family: "Open Sans",sans-serif;
+ }
+ #gallery .text{
+     width: 370px;
+     text-align: right;
+ }
+ #gallery .title h4{
+     width: auto;
+     margin-right: 52px;
+     padding: 34px 0 44px 0;
+ }
+ #gallery .title h4::after{
+     background: url(../images/after1.png);
+     left: 235px;
+ }
+ #gallery .text .same-btn{
+     margin-top: 30px;
+     margin-right: 5px;
+ }
+ #gallery .text a{
+     display: inline-block;
+     padding: 14px 20px;
+     border: 1px solid #d50a51;
+     border-radius: 50px;
+     transition: all linear .3s;
+     font-size: 16px;
+     font-weight: 400;
+     color: #d50a51;
+     font-family: "Josefin Sans", sans-serif;
+     margin-top: 33px;
+     margin-right: 20px;
+ }
+ #gallery .text a:hover{
+     background-color: #d50a51;
+     color: #fff;
+     border-color: #d50a51;
+ }   
+ /* gallery part end */
+ /* counter part start */
+#counter{
+    margin-top: 50px;
+    background: url(../images/c-bg.png) no-repeat center;
+    background-size: cover;
+    height: 200px;
+}
+#counter .counter-main{
+    display: flex;
+    padding: 60px 0 92px 0;
+}
+#counter .item{
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+#counter .item.after::after{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/af3.png) no-repeat center;
+    width: 59px;
+    height: 50px;
+    content: "";
+}
+#counter .item.afters::after{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/af2.png) no-repeat center;
+    width: 59px;
+    height: 50px;
+    content: "";
+}
+#counter .item h3{
+    font-size: 42px;
+    font-weight: 700;
+    color: #d50a51;
+    font-family: "Josefin Sans", sans-serif;
+}
+#counter .item p{
+    font-size: 32px;
+    font-weight: 700;
+    color: #444444;
+    font-family: "Josefin Sans", sans-serif;
+}
+/* counter part end */
+/* feedback part start */
+#feedback{
+    padding-top: 100px;
+}
+#feedback .main{
+    display: flex;
+    justify-content: space-between;
+}
+#feedback .item{
+    width: 570px;
+    background-color: #fffae2;
+    padding: 44px 30px 30px;
+    transition: all linear .3s;
+    position: relative;
+}
+#feedback .item .text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    font-family: "Open Sana", sans-serif;
+    line-height: 26px;
+}
+#feedback .item .image{
+    display: flex;
+}
+#feedback .item .person-info{
+    padding-top: 30px;
+    padding-left: 21px;
+}
+#feedback .item .person-info h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222222;
+    font-family: "Josefin Sans", sans-serif;
+}   
+#feedback .item .person-info .span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    font-family: "Open Sana", sans-serif;
+    line-height: 26px;
+}
+#feedback .item:hover{
+    filter: drop-shadow(0 0 3px rgb(0, 0, .2));
+}
+#feedback .item.after-one::after{
+    position: absolute;
+    top: -40px;
+    left: -38px;
+    width: 73px;
+    height: 63px;
+    background: url(../images/faf1.png);
+    content: "";
+}
+#feedback .item.after-two::after{
+    position: absolute;
+    bottom: -36px;
+    right: -38px;
+    width: 73px;
+    height: 63px;
+    background: url(../images/faf2.png);
+    content: "";
+}
+#feedback .feed-container{
+    position: relative;
+}
+#feedback i{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #d50a51;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #d50a51;
+    transition: all linear .3s;
+    cursor: pointer;
+    font-size: 18px;
+}
+#feedback i:hover{
+    background-color: #d50a51;
+    color: #fff;
+}
+#feedback .prev{
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    z-index: 9;
+}
+#feedback .next{
+    position: absolute;
+    top: 50%;
+    right: -70px;
+    z-index: 9;
+}
+/* feedback part end */
+/* footer part start */
+#footer{
+    padding-top: 120px;
+    position: relative;
+}
+#footer .footer-bg {
+    background: url(../images/f-bg.png) no-repeat center;
+    background-size: cover;
+}
+#footer .footer-logo{
+    text-align: center;
+    padding: 90px 0 60px;
+}
+#footer .main{
+    display: flex;
+    justify-content: space-between;
+    width: 1080PX;
+    height: 100PX;
+    margin: 0 auto;
+}
+#footer  .item ul{
+    display: flex;
+}
+#footer  .item ul li i{
+    width: 50px;
+    height: 50px;
+    background-color: #d50a51;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 23px;
+} 
+#footer  .item ul .text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: "Open Sana", sans-serif;
+    width: 220px;
+    padding-left: 20px;
+    line-height: 26px;
+}
+#footer .social{
+    text-align: center;
+}
+#footer .social h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #d50a51;
+    font-family: "Josefin Sans", sans-serif; 
+}
+#footer .social ul{
+    padding: 31px 0;
+}
+#footer .social ul i{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #d50a51;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #d50a51;
+    transition: all linear .3s;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+} 
+#footer .social ul i:hover{
+    background-color: #d50a51;
+    color: #fff;
+}
+#footer .news{
+    width: 1170px;
+    height: 120px;
+    background-color: #d50a51;
+    border-radius: 111px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 100px;
+}
+#footer .news .main{
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+}
+#footer .news .item-one img{
+    padding-top: 27px;
+}
+#footer .news .item-two{
+    padding: 36px 0;
+}
+#footer .news .item-two h4{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid #fff;
+    font-family: "Open Sana", sans-serif;
+    width: 270px;
+    color: #fff;
+    padding: 10px 0 10px 10px;
+}
+#footer .news .item-three{
+    padding: 36px 0;
+    position: relative;
+}
+#footer .news .item-three.after-three::after{
+    position: absolute;
+    width: 29px;
+    height: 33px;
+    top: 38px;
+    right: 3%;
+    transform: translate(-50%);
+    background: url(../images/n1.png) no-repeat center;
+    content: "";
+}
+#footer .news .item-three h3{
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    border: 1px solid #fff;
+    font-family: "Open Sana", sans-serif;
+    width: 270px;
+    color: #fff;
+    padding: 10px 0 10px 10px;
+}
+/* footer part end */
+/* footer btm part start */
+#footer-btm{
+    background: url(../images/fb-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 20px 0;
+    text-align: center;
+}
+#footer-btm .text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    font-family: "Open Sana", sans-serif;
+}
+#footer-btm .text p span{
+    color: #d50a51;
+}
+
+/* footer btm part end */
